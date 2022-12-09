@@ -29,7 +29,7 @@ if run_model:
     similarity = semantic_similarity(text1, txt)
     sim_list.append(similarity)
   max_index = sim_list.index(max(sim_list))
-  st.write("Similarity: %.2f%%" % similarity)
+  st.write("Similarity: %.2f%%" % sim_list[max_index])
   st.write("Recommendation: ",text_2[max_index])
   d = {}
   for i in range(len(text_2)):
